@@ -1,0 +1,29 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+            <p class="bot-message"><img src="https://ih1.redbubble.net/image.5009204302.5238/tst,small,845x845-pad,1000x1000,f8f8f8.jpg " class="logo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi! How can I help you today?</p>
+        </div>
+        <div class="input-container">
+            <input type="text" id="chat-input" class="chat-input" placeholder="Type your message...">
+            <button id="send-button" class="send-button">Send</button>
+            <label for="disappearing-toggle"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEsHL8IqbqRMa7yYvL4yCWGRzZE5x9t0129Q&s" class="dm"></label>
+            <input type="checkbox" id="disappearing-toggle">
+        </div>
+        <div class="footer">
+            <p>End-to-End Encrypted</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="../static/script.js"></script>
+</body>
+</html>

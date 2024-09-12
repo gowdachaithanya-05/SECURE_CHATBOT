@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 75%; /* Limiting maximum width */
+    border: 1px solid #3a3a3a;
+    height: 1000px;
+    max-height: 100%;
+    border-radius: 10px;
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    position: relative; /* Needed for absolute positioning of toggle container */
+}
+
+.chat-box {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    border-bottom: 1px solid #3a3a3a;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-box p {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    word-wrap: break-word; /* Ensure input wraps */
+    word-break: break-word; /* Break long words */
+    max-width: 80%; /* Limit the width of messages */
+    display: inline-block;
+}
+
+.bot-message {
+    background-color: #3a3a3a;
+    text-align: left;
+    padding-left: 50px; /* Adjust for logo width */
+    position: relative;
+    align-self: flex-start; /* Align to left */
+}
+
+.bot-message img {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px; /* Adjust logo size */
+    height: 40px;
+    border-radius: 50%; /* Circular logo */
+}
+
+.user-message {
+    background-color: white;
+    color: black;
+    text-align: right;
+    align-self: flex-end; /* Align to right */
+}
+
+.input-container {
+    display: flex;
+    border-top: 1px solid #3a3a3a;
+    padding: 10px;
+}
+
+.chat-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-radius: 10px;
+    word-wrap: break-word; /* Ensure input wraps */
+    word-break: break-word; /* Break long words */
+    padding: 12px;
+}
+
+.send-button {
+    padding: 10px;
+    border: none;
+    background-color: #f7f7f7;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-left: 8px;
+    border-radius: 10px;
+}
+
+.send-button:hover {
+    background-color: #bcd2be;
+}
+
+.footer {
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #3a3a3a;
+    font-size: 10px;
+}
+
+/* CSS for disappearing messages toggle */
+.toggle-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 60px;
+}
+
+.slider:before {
+    content: "";
+}
+
+.slider.round {
+    border-radius: 20px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+.dm{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left:5px;
+}
