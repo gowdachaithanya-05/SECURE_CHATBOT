@@ -35,7 +35,7 @@ def decrypt_message(enc_message):
 
 # OpenAI API setup (for testing purposes)
 import openai
-openai.api_key = 'sk-proj-FXj8N9B7XqmRgqZP77GXT3BlbkFJ1IIRG7uQYO1AwC8i9ww1'
+openai.api_key = ''
 
 @app.route("/")
 def index():
