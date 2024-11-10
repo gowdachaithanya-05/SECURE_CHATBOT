@@ -1,4 +1,4 @@
-// script.js
+
 
 const secretKey = CryptoJS.enc.Hex.parse("796F75723136627974656B6579313233");  // "your16bytekey123" in hex
 
